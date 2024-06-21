@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywodds" content="Öz geçmiş">
+    <meta name="description" content="Öz geçmişin özelliği">
+    <title>Ahmet Kural</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        div{
+            margin: 15px;
+            display: inline;
+           
+        }
+        div.container{
+            display: inline;
+        }
+        ul{
+            list-style-type: none;  /*li deki noktayı kaldırır */
+            width: 100%;
+            background-color:black;
+        }
+        ul li{
+            display:inline-block ;
+            width: 100px;
+            padding: 15px;
+            margin-left:-30px;
+            margin-right: 15px;
+            
+        }
+        #news-content{
+            display: none;
+        }
+        ul li:hover{
+            background-color:red;           
+            transition: 0.5s; 
+        }
+        ul li:hover > #news-content{
+            
+            position: absolute;
+            z-index: 1;
+            display: block;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+            
+        ul li a{
+            text-decoration: none;
+            color:#fff;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        i{
+            padding-right:5px;
+        }
+       
+
+        .news-li:hover:hover #news-contet{
+            display:block;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!--Yorum Satrı İÇİn
+    1- Alt+Shıft+F = Kodları Düzenlemk için
+    2-Ctrl+Alt+Aşağı ok tuşu= satırı kaydırmakk için
+    3-ctrl+d = aynı yazıları seçip toplu değiştirir
+    4-CRRL+SHIFT+K= SATIRI SİLER
+    5-ortalamak için kullanılır 
+    6- br bir satır boşluk bırakır, h başık görevi görür, hr çizgi yapar
+    --><ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i>Anasayfa</a></li>
+        <li class="news-li">
+             <a href=""><i class="fa-regular fa-newspaper"></i>Haberler</i></a>
+           
+             <div id="news-content">
+                <ul>
+                    <li style="display:block;"><a href="#">Haberler1</a></li>
+                    <li style="display:block;"><a href="#">Haberler2</a></li>
+                    <li style="display:block;"><a href="#">Haberler3</a></li>
+                    <li style="display:block;"><a href="#">Haberler4</a></li>
+                </ul>
+            </div>
+        
+        </li>
+        <li><a class="iletisim" href=""><i class="fa-regular fa-address-book"></i><span>İletişim</span></a></li>
+        <li><a href="#"><i class="fa-regular fa-address-card"></i>Hakımızda</a></li>
+    </ul>
+    
+<div class="container" style="float: right;">
+    <h1 >Ahmet Kural</h1>
+    <a href="https://tr.wikipedia.org/wiki/Ahmet_Kural" target="_blank">
+    <img src="/Odevler/resimler/Ahmetkural.jpg" alt="Ahmet Kural" width="200" length="200"/>
+    </a>
+</div>  
+
+<div class="about" >
+    <h2>Hayatı Ve Kariyeri</h2>
+    <hr/>
+    <p>10 Kasım 1982 tarihinde emniyet müdürü babasının görev yeri olan Kütahya'da dünyaya geldi. Konservatuvarda okuyan ablasının etkisiyle oyuncu olmaya karar veren Kural'ın çocukluğu, Kütahya, Denizli, Silopi, Karaman ve Nevşehir'de geçti. Lise yıllarında tiyatro çalışmalarına katıldı, Selçuk Üniversitesi Radyo Televizyon Sinema Bölümünü bitirdi ve <strong>Bilkent Üniversitesinde</strong> yüksek lisans yaptı. Müjdat Gezen Sanat Merkezi'nde oyunculuk eğitimi aldı. </p>
+    <p>Eğitimine devam ettiği sırada Levent Kırca-Oya Başar Tiyatrosu kadrosuna dâhil oldu. Tiyatro çalışmaları sürerken 2007 yılında Show TV'de yayımlanan Fikrimin İnce Gülü adlı dizi ve 2007-2008 yılları TRT 1'de yayımlanan Evimin Erkeği adlı dizilerde aldığı rollerle televizyonda görünmeye başladı. Ardından Gazi adlı dizide başrol oynamaya başladı, ancak izlenme oranının düşük olması nedeniyle dizi 19. bölümden sonra yayından kaldırıldı. Aynı yıl içinde Güneşin Oğlu adlı sinema filminde Haluk Bilginer, Köksal Engür, Hümeyra ve Özgü Namal ile birlikte rol aldı. Ardından Ramazan Güzeldir adlı dizinin bir bölümünde oynadı</p>
+    <p>2010 yılında Selçuk Aydemir'in yönettiği Çalgı Çengi adlı sinema filminde Murat Cemcir ile başrolde oynadı. 28 Haziran 2012 tarihinde Star TV'de yayınlanmaya başlayan İşler Güçler adlı dizinin başrollerini Murat Cemcir ve Sadi Celil Cengiz ile paylaştı. Dizi, 2013 yılında final yaparak sona erdi. Daha sonra Düğün Dernek adlı sinema filminde de Murat Cemcir'le başrolleri paylaştı. 2014 yılının Ekim ve Kasım aylarında vizyona giren Oflu Hoca'nın Şifresi isimli filmde bir bakanı canlandırdı, Evliya Çelebi ve Ölümsüzlük Suyu adlı filmde de karga karakterinin seslendirmesini yaptı.</p>
+    <p>İlk bölümü 13 Şubat 2014 tarihinde yayımlanan Kardeş Payı dizisinin başrolünü Murat Cemcir ve Seda Bakan ile paylaştı. Dizi, 2015 yılında final yaparak sona erdi.</p>
+    <p>4 Aralık 2015 tarihinde vizyona giren ve 2015 yılının en çok izlenen filmi olan Düğün Dernek 2: Sünnet filminin başrollerini yine Murat Cemcir ile paylaştı.</p>
+</div>
+
+    <h3 style="margin-top: 0px;">Kişisel hayatı</h3>
+    <p>18 Temmuz 2023 tarihinde Çağla Gizem Şahin ile evlendi.</p>
+    <br>
+    <h2>Şiddet olayları</h2>
+    <hr>
+    <p>Ahmet Kural, zaman zaman kadınlara uyguladığı şiddet haberleriyle basında yer aldı. Eylül 2014'te eski sevgilisi Naz Çekem'in parmağını kırdı.</p>
+    <p>Kasım 2018'de Sıla, kendisine fiziksel ve psikolojik şiddet uyguladığı gerekçesiyle sevgilisi Ahmet Kural'dan şikâyetçi oldu. 6284 Sayılı Kanun gereğince Kural'a üç ay uzaklaştırma cezası verildi. Ahmet Kural, Sıla'ya şiddet uyguladığı iddiasını başta reddederek şarkıcının "sadece kolunu tuttuğunu" söyledi ancak daha sonra aralarında bir "itişme" yaşandığını açıkladı.[8] Açılan davada 1 yıl 4 ay 20 gün hapis cezasına çarptırıldı. Kural'ın yeniden yargılanmasına 19 Şubat 2021'de başlandı ve 5 yıla kadar hapsi istendi. Hakkında verilen hapis cezası 11 Ocak 2022 tarihinde kesinleşti.</p>
+    <p>Tamamı için <a href="https://tr.wikipedia.org/wiki/Ahmet_Kural" target="_blank">tıklayınız.</a></p>
+    <h2>Filmografisi</h2>
+  
+    <TAble border="3">
+        <tr>
+            <th>Yıl</th>
+            <th>Yapım</th>
+            <th>Rol</th>
+        </tr>
+
+        <tr>
+            <td>2024</td>
+            <td>Efsane</td>
+            <td>Sadık/Özgür</td>
+        </tr>
+
+        <tr>
+            <td>2022</td>
+            <td>Müjdemi İsterim</td>
+            <td>Bulut</td>
+        </tr>
+
+        <tr>
+            <td>2021-2022</td>
+            <td>Bir zamnalar Kıbrıs</td>
+            <td>Kemal Dereli</td>
+        </tr>
+
+        <tr>
+            <td>2020</td>
+            <td>Mahalleden Arkaşlar</td>
+            <td>Cami Cemaati</td>
+        </tr>
+
+        <tr>
+            <td>2020</td>
+            <td>Baba Parası</td>
+            <td>Taksici Selim</td>
+        </tr>
+    </TAble>
+<script>
+    $("span").on("click",function(){
+        alert("İletisim için : kapkaban1234@gmail.com");
+    })
+</script>
+</body>
+
+    
+
+
+</html>

@@ -1,0 +1,83 @@
+#kasa {
+    margin: 0 auto;
+    width: 75vw;
+  
+  }
+  
+  #banner {
+    height: 120px;
+    background-color: aqua;
+  }
+  
+  #orta {
+    margin-top: 10px;
+  }
+  
+  #linkler {
+    float: left;
+    width: 15vw;
+    margin-right: 1.5vw;
+    background-color: #0066FF;
+  }
+  #icerik {
+    float: left;
+    background-color: #FFFF66;
+    min-height: 300px;
+    width: 58.5vw;
+  }
+  
+  #altbolum{
+      min-height: 70px;
+      background-color: gainsboro;
+      margin-top: 10px;
+  }
+  
+  #navigasyon{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px
+  }
+  
+  #navigasyon li{
+    line-height: 150%;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  #navigasyon a{
+    color:white;
+    text-decoration: none;
+    font-size: 150%;
+    width: 100%;
+  
+  }
+  
+  #navigasyon a:hover{
+    color:darkgray;
+  }
+  
+  .phptablo{
+    border:1px solid #000;
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 6000px) {
+    #kasa {
+      margin: 0;
+      width: 100vw;
+    }
+  
+    #linkler {
+      width: 100vw;
+      margin-right: 0;
+    }
+    #icerik {
+      margin-top: 10px;
+      width: 100vw;
+    }
+  }
+  
